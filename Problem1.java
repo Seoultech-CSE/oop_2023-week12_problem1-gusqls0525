@@ -9,7 +9,7 @@ public class week13_1 {
         System.out.print("Enter five integers and five doubles: ");
 
         /*
-            list 입력 코드
+            list 입력 코드.
          */
 
         sort(list);
