@@ -29,7 +29,7 @@ public class Problem1 {
     public static void sort(ArrayList<Number> list) {
         
         for(int i = 0; i < list.size(); i++){
-            for(int j = i; j < list.size() - 1; j++)
+            for(int j = 0; j < list.size() - 1; j++)
             {
                 if(list.get(j).doubleValue() > list.get(j + 1).doubleValue())
                 {
