@@ -21,9 +21,10 @@ public class Problem1 {
 
         sort(list);
 
-        for(int i = 0; i < list.size(); i++){
+        for(int i = 0; i < list.size() - 1; i++){
             System.out.print(list.get(i) + " ");
         }
+        System.out.print(list.get(list.size()-1));
     }
 
     public static void sort(ArrayList<Number> list) {
