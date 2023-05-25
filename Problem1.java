@@ -21,10 +21,9 @@ public class Problem1 {
 
         sort(list);
 
-        for(int i = 0; i < list.size() - 1; i++){
+        for(int i = 0; i < list.size(); i++){
             System.out.print(list.get(i) + " ");
         }
-        System.out.print(list.get(list.size()-1));
     }
 
     public static void sort(ArrayList<Number> list) {
@@ -34,9 +33,17 @@ public class Problem1 {
             {
                 if(list.get(j).doubleValue() > list.get(j + 1).doubleValue())
                 {
-                double a = list.get(j + 1).doubleValue();
-                list.set(j+1, list.get(j));
-                list.set(j, a);
+                    if(list.get(j + 1) instanceof Integer){
+                        int a = list.get(j + 1).intValue();
+                        list.set(j+1, list.get(j));
+                        list.set(j, a);
+                    }
+                    else{
+                        double a = list.get(j + 1).doubleValue();
+                        list.set(j+1, list.get(j));
+                        list.set(j, a);
+                    }
+                
                 }
             }
             
